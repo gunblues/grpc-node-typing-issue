@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "charset": "utf8",
+    "moduleResolution": "Node",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "noImplicitAny": true,
+    "downlevelIteration": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": [
+      "es5",
+      "dom",
+      "es2015",
+      "es2016",
+      "es2017"
+    ],
+    "strict": true,
+    "alwaysStrict": true,
+    "rootDirs": ["src", "test"],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src"
+    ],
+    "types": [
+      "node"
+    ],
+    "outDir": "./dist/"
+  },
+  "include": [
+    "index.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "submodule"
+  ],
+  "compileOnSave": true,
+  "pretty": true,
+  "removeComments": true
+}

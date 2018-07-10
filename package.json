@@ -1,0 +1,30 @@
+{
+  "name": "grpc-node-typing-issue",
+  "version": "0.0.1",
+  "description": "For reproduce this issue - https://github.com/grpc/grpc-node/issues/425",
+  "scripts": {
+    "clean": "./node_modules/.bin/rimraf './dist/*'",
+    "lint": "./node_modules/.bin/tslint -t codeFrame 'index.ts'",
+    "build": "yarn clean && yarn lint && tsc --pretty true --project ./tsconfig.json"
+  },
+  "keywords": [
+    "grpc"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gunblues/grpc-node-typing-issue.git"
+  },
+  "dependencies": {
+    "@types/es6-shim": "0.31.37",
+    "@types/node": "10.5.1",
+    "@types/protobufjs": "^6.0.0",
+    "grpc": "^1.13.0",
+    "protobufjs": "^6.8.6",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "tslint": "5.10.0",
+    "typescript": "2.9.2"
+  }
+}
